@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+    border: 0;
+    font-size: 14pt;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body, main{
+	height: 100%;
+}
+main{
+	display: flex;
+}
+li div{
+	display: flex;
+	position: relative;
+	padding: 3px;
+	
+}
+li{
+	padding: 10px;
+}
+li:hover {
+	background-color: lightgray;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+.removeBt {
+	float: right;
+	position: absolute; 
+  	right: 5px;
+}
+#addNote {
+	background-color: transparent;
+	width: 96px;
+	height: 96px;
+	position: absolute; 
+  	bottom: 10px;
+  	right: 10px;
+  	font-size: 40pt;
+}
+#allNotesContainer{
+	width: 30%;
+	height: 100%;
+	overflow-y: scroll;
+}
+#notepadContainer{
+	width: 70%;
+	height: 100%;
+	position: relative;
+}
+#noteTextInput{
+	position: absolute; 
+  	bottom: 0;
+  	width: calc(100% - 4px);
+    height: calc(100% - 50px);
+}
+#noteTitleInput{
+	position: absolute; 
+	top: 0;
+	width: calc(100% - 4px);
+	height: 38px;
+}
+span {
+	height: 25px;
+}
+#hidden {
+	visibility: hidden;
+}
